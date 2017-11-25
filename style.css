@@ -1,0 +1,140 @@
+  .main-screen {
+    background-color: #2E353D;
+  }
+
+  .search-block {
+    margin-top: 5%;
+  }
+
+  .form-control {
+    padding: 10px 0 10px 7px;
+  }
+
+  .text-center {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background-color: none;
+  }
+
+  .search-title {
+    color: white;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 4%;
+  }
+
+  .card-title {
+    margin-bottom: none;
+    padding-top: 3%;
+    color: white;
+  }
+
+  .movies-img {
+    height: 227px;
+    cursor: pointer;
+  }
+
+  .movies-popup-block {
+    background-color: white;
+  }
+
+  .movie-popup-img {
+    display: block;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  .movies-popup-descriptions {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+
+  .movies-popup-descriptions p {
+    min-height: 200px;
+    overflow-y: hidden;
+  }
+
+  .movies-popup-title h1 {
+    text-align: center;
+    padding-top: 24px;
+  }
+
+  .popup-img {
+    max-width: 100%;
+    width: 200px;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 9px;
+    top: 0;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .container-popup-movies {
+    position: relative;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .active {
+    display: block;
+    -webkit-animation: active 1s 1;
+    /* Safari 4.0 - 8.0 */
+    animation: active 1s 1;
+    /* Use for mobile */
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+  }
+
+  #movie-popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 13%;
+    bottom: 0;
+  }
+
+  .arrow {
+    position: relative;
+    color: white;
+    font-size: 40px;
+    top: 184px;
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: 4%;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    position: absolute;
+    left: 4%;
+    cursor: pointer;
+  }
+
+  #movie-popup::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+  }
+
+  @keyframes active {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
