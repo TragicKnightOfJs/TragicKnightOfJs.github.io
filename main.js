@@ -1,7 +1,9 @@
 'use script';
 const form = document.getElementById('global-form');
 
-form.addEventListener('submit', searchMovies);
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+});
 
 form.addEventListener('input', searchMovies);
 
